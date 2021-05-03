@@ -15,7 +15,7 @@ h6 {
 	margin: 0;
 	color: #111111;
 	font-weight: 400;
-	font-family: "Oswald", sans-serif;
+  font-family: 'Lexend', sans-serif;
 }
 
 h1 {
@@ -204,64 +204,106 @@ ol {
       font-size: 1.4rem;
       opacity: 0.85;
   }
-   /* up nav hh */
+/* -------------- Up Nav -------------- */
 
-   .UpNav {
-       display: flex;
-       background-color: var(--p);
-       color: var(--b);
-       height: 40px;
-       flex-wrap: nowrap;
-       align-items: center;
-       justify-content: space-between;
-   }
-   .UpNav p, .UpNav button{
-    font-family: 'Lexend', sans-serif;
-    display: inline;
-    margin: 5px;
-    color: black;
-   }
-   .UpNav button{
-       border-bottom:  1px  var(--b) solid ;
-       border-left:none;
-       border-top: none;
-       border-right: none;
-       background-color: var(--p);
-       color: var(--b);
-       cursor: pointer;
-       margin-right: 8px;
-       
-   }
-   .UpNav i {
-       padding-left: 10px;
-   }
-
-   .fitness {
-    position: absolute;
-   }
-
-   .fitness ul {
-    height: 0px;
-    overflow: hidden;
+.UpNav {
+  display: flex;
+  background-color: var(--b);
+  color: var(--S);
+  height: 40px;
+  padding-top: 5px;
+  flex-wrap: nowrap;
+  align-items:flex-start;
+  justify-content: space-between;
+  border-bottom:  1px  rgba(255, 255, 255, 0.267) solid ;
+  border-left:none; border-top: none; border-right: none;
+}
+.UpNav a {
+  color: var(--S);
+}
+.UpNav p, .UpNav button{
+font-family: 'Lexend', sans-serif;
+display: inline;
+}
+.UpNav button{
+  border-bottom:  1px  var(--S) solid ;
+  border-left:none; border-top: none; border-right: none;
+  background-color: transparent;
+  color: var(--s);
+  cursor: pointer;
+  margin-right: 8px;
+  
+}
+.UpNav .p{
+  display: flex;
 }
 
-   .fitness:hover ul{
-    
-    background-color: var(--b);
-    display: block;
+.UpNav i {
+  padding-left: 10px;
+}
 
-    height: auto;
-    color: var(--S);
-    position: relative;
-    /*top: 60px;*/
-   }
-   .fitness:hover ul li{
-    padding: 9px;
-   }
-   .underF{
-       position: absolute;
-       top: 10px;
-   }
+.email {
+display: inline;
+margin: 0px;
+padding: 0px; 
+width: 28px;
+transition: width 0.4s   }
+.email p {
+   display:inline-block;
+   width: 0%;
+   height: 0%;
+   overflow: hidden;
+   opacity: 0;
+   font-weight: bold;
+   transition-delay: 1s;
+   transition: all 1.5s;
+
+}
+.email:hover{
+width: 185px;   }
+
+.email:hover p{
+   width: 100%;
+   display: inline;
+   opacity: 1;
+}
+
+.phone{
+display: inline;
+}
+.phone p {
+display:inline-block;
+width: 0%;
+height: 0%;
+overflow: hidden;
+opacity: 0;
+transition: opacity 0.7s;
+
+}
+.phone:hover p{
+width: 100%;
+display: inline;
+opacity: 1;
+}
+
+@media screen and (max-width:  545px){
+.sign{
+   display: inline-block;
+   width: 100%;
+   text-align: center;
+}
+.UpNav .p{
+   display: block;
+   width: 0%;
+   height: 0%;
+   visibility: hidden;
+}
+
+
+  }
+/* -------------- End Up Nav -------------- */
+
+
   
   .fadit {
     background-color: black !important;
