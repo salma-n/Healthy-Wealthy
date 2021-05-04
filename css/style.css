@@ -4,9 +4,9 @@
     box-sizing: border-box;
    }
    :root{
-    --p : #fff;
-    --S : #ffffff;
-    --b: #000;
+    --p : #D1C0A8;
+    --S : #FDFFFC;
+    --b: #262626;
    }
 /* -------------- NavBar -------------- */
 nav{
@@ -135,8 +135,8 @@ nav{
 
    .UpNav {
        display: flex;
-       background-color: var(--b);
-       color: var(--p);
+       background-color: var(--p);
+       color: var(--b);
        height: 40px;
        padding-top: 5px;
        flex-wrap: nowrap;
@@ -146,17 +146,17 @@ nav{
        border-left:none; border-top: none; border-right: none;
    }
    .UpNav a {
-       color: var(--p);
+       color: var(--b);
    }
    .UpNav p, .UpNav button{
     font-family: 'Lexend', sans-serif;
     display: inline;
    }
    .UpNav button{
-       border-bottom:  1px  var(--p) solid ;
+       border-bottom:  1px  var(--b) solid ;
        border-left:none; border-top: none; border-right: none;
        background-color: transparent;
-       color: var(--p);
+       color: var(--b);
        cursor: pointer;
        margin-right: 8px;
        
@@ -187,6 +187,9 @@ nav{
     
 .phone{
     display: inline;
+}
+.p{
+    top: 3px;
 }
 .phone p {
     display:inline-block;
@@ -227,10 +230,10 @@ body{
 
    }
     .left{
-        width:50%;
+        width:45%;
     }
     .right {
-        width: 50%;
+        width: 45%;
     }
  
 section{
@@ -259,7 +262,7 @@ h4{
     
 }
 .filtrage .list button  {
-    margin-top: 60px;
+    margin-top: 20px;
     margin-left: 30px;
     color: var(--b);
     font-weight: bold;
@@ -369,7 +372,7 @@ h4{
 
 /* -------------- Footer -------------- */
 footer {
-	background: #000000;
+	background: #262626;
 	padding-top: 50px;
 }
 
