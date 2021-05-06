@@ -1,7 +1,10 @@
 *{
-    margin: 0px;
-    padding: 0px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    letter-spacing: 1px;
+    color: var(--S);
    }
    :root{
     --p : #D1C0A8;
