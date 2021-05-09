@@ -84,7 +84,7 @@ ol {
    :root{
     --p : #D1C0A8;
     --S : #FDFFFC;
-    --b: #000;
+    --b : #262626;
    }
    /* navbar */
    nav{
@@ -92,7 +92,7 @@ ol {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: var(--b);
+    background-color: #262626;
     font-family: 'Lexend', sans-serif;
     height: 3.5em;
     width: 100%;
@@ -208,8 +208,8 @@ ol {
 
 .UpNav {
   display: flex;
-  background-color: var(--b);
-  color: var(--S);
+  background-color: var(--p);
+  color: var(--b);
   height: 40px;
   padding-top: 5px;
   flex-wrap: nowrap;
@@ -219,17 +219,17 @@ ol {
   border-left:none; border-top: none; border-right: none;
 }
 .UpNav a {
-  color: var(--S);
+  color: var(--b);
 }
 .UpNav p, .UpNav button{
 font-family: 'Lexend', sans-serif;
 display: inline;
 }
 .UpNav button{
-  border-bottom:  1px  var(--S) solid ;
+  border-bottom:  1px  var(--b) solid ;
   border-left:none; border-top: none; border-right: none;
   background-color: transparent;
-  color: var(--s);
+  color: var(--b);
   cursor: pointer;
   margin-right: 8px;
   
@@ -305,10 +305,7 @@ opacity: 1;
 
 
   
-  .fadit {
-    background-color: black !important;
-    border: 0;
-  }
+ 
   .nav0{
   padding: 22%;
    position: relative;
